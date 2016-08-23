@@ -1,0 +1,22 @@
+{
+  "name": "nova",
+  "version": "1.0.0",
+  "description": "coding challenge",
+  "main": "app.js",
+  "scripts": {
+    "start": "node main.js",
+    "start-watch": "pm2 start app.js --watch",
+    "stop": "pm2 stop all",
+    "restart": "pm2 restart all app.js --watch",
+    "deleteAll": "pm2 delete all",
+    "showLogs": "pm2 logs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "basicauth-middleware": "^1.1.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "pm2": "^1.1.3"
+  }
+}
